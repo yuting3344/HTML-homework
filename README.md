@@ -1,2 +1,146 @@
 # HTML-homework
 HTML-homework
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>愉庭的課表</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 700px;
+      }
+      * {
+        font-family: "Noto Serif TC", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      td {
+        height: 60px;
+      }
+      .wid {
+        width: 100px;
+        font-size: x-large;
+      }
+      .first {
+        font-weight: 700;
+        font-size: large;
+      }
+      .fan {
+        font-size: medium;
+        font-weight: 700;
+        width: 42px;
+      }
+      .font {
+        font-size: medium;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+      .space {
+        letter-spacing: 50px;
+        justify-content: center;
+        font-size: x-large;
+      }
+      .session span {
+        display: block;
+        writing-mode: vertical-lr;
+        /* letter-spacing: 90px; */
+        text-align-last: justify;
+        height: 50%;
+        font-size: x-small;
+        /* writing-mode: vertical-lr; */
+        font-weight: 700;
+        margin: auto;
+        /* text-align-last: justify; */
+      }
+      * {
+        text-align: center;
+      }
+      .time,
+      .line {
+        writing-mode: vertical-lr;
+        text-align: center;
+        width: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2" width="700">
+      <thead>
+        <tr>
+          <td class="time">時段</td>
+          <td class="line">節次</td>
+          <td colspan="2">時間星期</td>
+          <td class="wid">一</td>
+          <td class="wid">二</td>
+          <td class="wid">三</td>
+          <td class="wid">四</td>
+          <td class="wid">五</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="8" class="session"><span>上午</span></td>
+          <td rowspan="2"></td>
+          <td rowspan="2" class="font">07:50<br />|<br />08:00</td>
+          <td rowspan="2" class="fan">10</td>
+          <td class="wid">運動服</td>
+          <td class="wid">制服</td>
+          <td class="wid">便服</td>
+          <td class="wid">運動服</td>
+          <td class="wid">制服</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="space">晨光活動</td>
+        </tr>
+        <tr>
+          <td class="first">0</td>
+          <td class="font">08:00<br />|<br />08:40</td>
+          <td class="fan">40</td>
+          <td class="wid">戶外朝會</td>
+          <td class="wid">室內朝會</td>
+          <td class="wid">社會</td>
+          <td class="wid">深耕閱讀</td>
+          <td class="wid">室內朝會</td>
+        </tr>
+        <tr>
+          <td class="first">1</td>
+          <td class="font">08:45<br />|<br />09:25</td>
+          <td class="fan">40</td>
+          <td class="wid">數學</td>
+          <td class="wid">綜合</td>
+          <td class="wid">自然</td>
+          <td class="wid">數學</td>
+          <td class="wid">數學</td>
+        </tr>
+        <tr>
+          <td class="first">2</td>
+          <td class="font">09:35<br />|<br />10:15</td>
+          <td class="fan">40</td>
+          <td class="wid">英語</td>
+          <td class="wid">綜合</td>
+          <td class="wid">自然</td>
+          <td class="wid">健康</td>
+          <td class="wid">國語</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="font">10:15<br />|<br />10:35</td>
+          <td class="fan">20</td>
+          <td colspan="5" class="space">課間活動</td>
+        </tr>
+        <tr>
+          <td class="first">3</td>
+          <td class="font">10:35<br />|<br />11:15</td>
+          <td class="fan">40</td>
+          <td class="wid">國語</td>
+          <td class="wid">母語</td>
+          <td class="wid">數學</td>
+          <td class="wid">國語</td>
+          <td class="wid">美勞</td>
+        </tr>
+        <tr>
+          <td class="first">4</td>
